@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "mailto: ProtonMail",
+  "description": "add mailto support for ProtonMail",
+  "author": "Stephan Lachnit",
+  "homepage_url": "https://github.com/stephanlachnit/mailto_protonmail",
+  "version": "0.9",
+
+  "icons": {
+    "96": "icons/protonmail-96.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mailto_protonmail@stephanlachnit"
+    }
+  },
+
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "name": "ProtonMail",
+      "uriTemplate": "https://mail.protonmail.com/?mailtoUrl=%s"
+    }
+  ]
+
+}
